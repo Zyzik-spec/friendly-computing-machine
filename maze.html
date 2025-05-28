@@ -1,9 +1,7 @@
 
 <!DOCTYPE html>
-<html lang="ru">
-<head><meta charset="UTF-8"><title>Мини-лабиринт</title>
-<style>body{background:#1e3c72;color:white;text-align:center;padding-top:50px;font-family:sans-serif;}#maze{width:300px;height:300px;background:black;margin:20px auto;position:relative;}#player{width:30px;height:30px;background:magenta;position:absolute;top:10px;left:10px;border-radius:50%;}</style>
-</head>
+<html lang="ru"><head><meta charset="UTF-8"><title>Мини-лабиринт</title>
+<style>body{background:#1e3c72;color:white;text-align:center;padding-top:50px;font-family:sans-serif;}#maze{width:300px;height:300px;background:black;margin:20px auto;position:relative;}#player{width:30px;height:30px;background:magenta;position:absolute;top:10px;left:10px;border-radius:50%;}</style></head>
 <body><h1>🎮 Игра: Мини-лабиринт</h1><div id="maze"><div id="player"></div></div><p>Используй стрелочки на клавиатуре!</p><p><a href="index.html">🔙 На главную</a></p>
 <script>const p=document.getElementById('player');let x=10,y=10;document.addEventListener('keydown',e=>{const s=10;if(e.key==='ArrowUp')y=Math.max(0,y-s);if(e.key==='ArrowDown')y=Math.min(270,y+s);if(e.key==='ArrowLeft')x=Math.max(0,x-s);if(e.key==='ArrowRight')x=Math.min(270,x+s);p.style.top=y+'px';p.style.left=x+'px';});</script>
 </body></html>
